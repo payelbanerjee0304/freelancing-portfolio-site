@@ -1,0 +1,166 @@
+body {
+  font-family: Roboto Condensed;
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: #333;
+}
+
+.resume {
+  width: 210mm;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align top edges of left and right */
+  gap: 20px; /* Add spacing between left and right parts */
+}
+.header-left {
+  flex: 1; /* Allow the left side to take available space */
+  max-width: calc(100% - 150px); /* Prevent overflow into the right part */
+  word-wrap: break-word; /* Break long words if needed */
+  overflow-wrap: anywhere; /* Ensure all content stays within bounds */
+  margin-bottom: 20px;
+}
+.header-right {
+  flex: 0 0 150px; /* Fixed width for the image container */
+  display: flex;
+  justify-content: center; /* Center image horizontally */
+  align-items: center; /* Center image vertically */
+}
+
+header h1 {
+  font-size: 24px;
+  color: #141961;
+  margin-bottom: 5px;
+}
+
+header h2 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #333;
+}
+
+header p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+header img {
+  width: 161px;
+  height: 194px;
+}
+
+.expertise-section {
+  display: flex;
+  justify-content: space-between;
+  background: #141961;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  /* margin-bottom: 20px; */
+}
+
+.expertise,
+.competencies {
+  width: 39%;
+}
+
+.expertise h3,
+.competencies h3,
+.education h2,
+.hobbies h3,
+.projects h3 {
+  margin-top: 5px;
+}
+.work-experience h2 {
+  margin-top: 10px;
+}
+h2 {
+  color: #141961;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+.hobbies-projects {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.hobbies,
+.projects {
+  width: 48%;
+}
+
+.languages {
+  margin-top: 20px;
+}
+.education {
+  background: #141961;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.education h2 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.education ul li {
+  color: #fff;
+}
+
+.work-experience {
+  margin-bottom: 20px;
+}
+
+.work-experience h2 {
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+.work-experience ul {
+  list-style: none;
+  padding: 0;
+}
+
+.work-experience li {
+  display: flex;
+  gap: 20px; /* Adjust gap between the time period and description */
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.work-experience li span.period {
+  flex: 0 0 175px; /* Fixed width for the period */
+  font-weight: bold;
+  color: #004080;
+}
+
+.work-experience li span.description {
+  flex: 1; /* Take remaining space */
+}
+.hbiNam {
+  font-weight: bold;
+}
